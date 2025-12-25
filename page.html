@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas Katty 🎄</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <h1>Merry Christmas <span>Katty</span> 🎄</h1>
+    <p>This is what the surprise is 😁 (Not an iPhone nor mango float, those are future gifts hehe)</p><br>Tap on the button
+    <button class="btn" onclick="openGift()">Open Your Gift 🎁</button>
+  </section>
+
+  <!-- Letter Section -->
+  <section id="letter" class="hidden">
+    <h1>Dear Bestie 💗</h1>
+    <p id="typeText"></p>
+    <button class="btn" onclick="nextSection()">Next</button>
+  </section>
+
+  <!-- Reasons Section -->
+  <section id="reasons" class="hidden">
+    <h1>Why You're Special 🌟</h1>
+    <p id="reasonText">A few among the many reasons..</p>
+    <button class="btn" onclick="showReason()">Tell Me</button>
+  </section>
+
+  <!-- Final Section -->
+  <section id="final" class="hidden">
+    <h1>One Last Thing 🎁</h1>
+
+    <button class="btn" id="openFinalGift">Open 💌</button>
+
+    <div id="letterBox" class="hidden">
+      <button id="closeLetter">✕</button>
+
+      <p id="finalText"></p>
+
+      <video id="finalVideo" class="hidden">
+        <source src="display.webm" type="video/webm">
+      </video>
+
+      <p id="finalWish" class="hidden"></p>
+    </div>
+  </section>
+
+  <div id="thankYouScreen">
+    <h1>Thankyou💗</h1>
+  </div>
+
+  <!-- Music -->
+  <audio id="bgMusic" src="soundtrack.m4a" loop></audio>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
